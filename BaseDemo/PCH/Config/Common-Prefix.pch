@@ -1,0 +1,51 @@
+//
+//  Common-Prefix.pch
+//  BaseDemo
+//
+//  Created by zizilink on 2017/12/20.
+//  Copyright © 2017年 Jessie. All rights reserved.
+//
+
+#import <Availability.h>
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+/**
+ * 宏定义
+ */
+#import "macro_define.h"
+/**
+ * 单例
+ */
+#import "Singleton.h"
+/**
+ * 公共方法
+ */
+#import "JS_Tool.h"
+#import "UIButton+Category.h"
+#import "UILabel+Category.h"
+#import "UITextField+Category.h"
+
+/**
+ * 根据文字大小 获取长度
+ */
+#import "NSString+YW.h"
+/**
+ * 邮箱、手机号等验证
+ */
+#import "NSString+CYValidation.h"
+/**
+ * frame简化计算
+ */
+#import "UIView+Extension.h"
+
+
+
+
+#endif /* Common_Prefix_pch */
